@@ -10,7 +10,7 @@
 // Questions to ask:
 //   ???
 //
-// Solution:
+// Solution (naive):
 //   1. Iterate over characters
 //   2. Check if character already exists in a new substring
 //     2.1. If doesn't add it to a new substring
