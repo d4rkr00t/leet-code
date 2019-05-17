@@ -44,7 +44,6 @@ function treeSum(nums, target = 0) {
     let sum = target - nums[i];
     for (let j = i + 1; j < nums.length; j++) {
       if (set.has(sum - nums[j])) {
-        console.log(nums[i], nums[j], sum - nums[j]);
         let item = [nums[i], nums[j], sum - nums[j]].sort((a, b) => a - b);
         result[item.join("")] = item;
       }

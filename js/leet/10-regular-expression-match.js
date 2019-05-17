@@ -64,8 +64,28 @@ var isMatch = function(s, p) {
   return dp[0][0];
 };
 
+/**
+ *   a b
+ * a 1 0 0
+ * b 0 1 0
+ *   0 0 1
+ */
 console.log(isMatch("ab", "ab"), true);
+
+/**
+ *    a *
+ *  a 1 0 0
+ *  a 1 0 0
+ *    1 0 1
+ */
 console.log(isMatch("aa", "a*"), true);
+
+/**
+ *    . * c
+ *  a 0 0 0 0
+ *  b 0 0 0 0
+ *    0 0 0 1
+ */
 console.log(isMatch("ab", ".*c"), false);
 console.log(isMatch("aab", "c*a*b"), true);
 console.log(isMatch("aa", "a"), false);
