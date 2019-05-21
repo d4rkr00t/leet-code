@@ -1,3 +1,8 @@
+# Two Sum
+# #url: https://leetcode.com/problems/two-sum/
+# #easy
+
+
 def twoSum(nums, target):
     rec = {}  # { 2: 0 }
 
