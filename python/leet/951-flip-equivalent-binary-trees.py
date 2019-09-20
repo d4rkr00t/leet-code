@@ -2,8 +2,8 @@
 # https://leetcode.com/problems/flip-equivalent-binary-trees/
 # medium
 #
-# Time: O(n) – as we need to compare all nodes
-# Memory: O(n) – memory needed to keep stack
+# Time: O(n) – as we need to compare all nodes, where n is number of nodes in a tree
+# Memory: O(h) – memory needed to keep stack, where h is a hight of a tree
 #
 # 1. For current parent check if it's a flip or not
 # 2. IF a flip:
