@@ -2,14 +2,8 @@
 # https://leetcode.com/problems/wiggle-subsequence/
 # medium
 #
-# Time:  TBD
-# Space: TBD
-#
-# Solution:
-# dp
-#
-#
-# dp[i] = dp[i-1] + 1 if dp[i].dir != cur_dir else dp[i]
+# Time:  O(n)
+# Space: O(1)
 
 
 def wiggleMaxLength(nums: [int]) -> int:
@@ -33,9 +27,3 @@ def wiggleMaxLength(nums: [int]) -> int:
 print(wiggleMaxLength([1, 7, 4, 9, 2, 5]), 6)
 print(wiggleMaxLength([1, 17, 5, 10, 13, 15, 10, 5, 16, 8]), 7)
 print(wiggleMaxLength([1, 2, 3, 4, 5, 6, 7, 8, 9]), 2)
-
-#  1  2   3  4   4   4   5  5   6   7
-# [1, 17, 5, 10, 13, 15, 10, 5, 16, 8]
-
-#  1  2   3  3  4    4  4   4   5  5   6   7
-# [1, 27, 5, 5, 10, 10, 13, 18, 17, 5, 16, 8]
